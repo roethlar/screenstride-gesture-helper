@@ -1,0 +1,7 @@
+Use case: precise-object-edit.
+Asset type: refined app icon for ScreenStride.
+Input image: edit target, the owner-selected A concept. Preserve its identity and composition faithfully.
+Refine this exact amber-gold upright screen plane with a large ivory mouse pointer passing through it and exactly two amber motion trails extending left. Keep the same proportions, orientation, pointer silhouette, perspective, placement, amber/ivory palette, and restrained dimensional bevels. Do not redesign it.
+Change only finishing quality: replace the fuzzy glowing edge halo with clean, sharply antialiased edges and restrained soft contact shadows. Simplify tiny reflective details so the two trails, screen rim and ivory pointer stay legible at 40–60 pixels.
+Place the unchanged mark on a completely opaque, uniform very dark charcoal square background (#18181B), filling the entire canvas. No transparency, no vignette or background texture. Keep generous safe margins so every part fits comfortably within a rounded app icon mask; do not draw a rounded outer mask into the image itself.
+Output a single square icon image, preferably 1024 by 1024 pixels. No mockup, no border, no labels, no text, no letters, no S or Q, no blue or cyan, no folded ribbon, no extra objects.

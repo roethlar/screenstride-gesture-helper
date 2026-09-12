@@ -1,0 +1,27 @@
+# Attribution
+
+ScreenStride includes a Swift adaptation of protocol implementations and
+reverse-engineering findings from iShareScreen:
+
+- Upstream: https://github.com/renegadelink/iShareScreen
+- Authors: iShareScreen contributors
+- Pinned revision: 9ab40d3a3151524f954cff9d6239d891197c1705
+- License: GNU Affero General Public License, version 3 or any later version
+
+Adapted areas include RSA/SRP authentication, enc1103 record encryption,
+media offer serialization, RTP/RTCP key derivation and transport, and Apple's
+H.264/HEVC packetization and AAC-ELD audio negotiation/decoding. Native Swift implementation and iPad integration were
+created in September 2026. Reference fixture generation imports the pinned
+upstream implementation.
+
+The applicable AGPL license text is in LICENSE. Source for the app is in App,
+Sources, project.yml and Package.swift. The reference checkout is retained
+locally under research/iShareScreen and is excluded from the outer project's
+source tracking; its pinned upstream source remains available at the URL above.
+
+BigInt, by Károly Lőrentey and contributors, is distributed under the MIT
+license: https://github.com/attaswift/BigInt. A copy of that license is in
+THIRD_PARTY_LICENSES/BigInt.txt.
+
+System frameworks (CommonCrypto, CryptoKit, Security, VideoToolbox,
+CoreMedia, CoreVideo, AVFoundation, SwiftUI and UIKit) are supplied by Apple.

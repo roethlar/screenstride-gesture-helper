@@ -1,0 +1,40 @@
+name: ScreenStrideGestureHelper
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+targets:
+  GestureHelper:
+    type: application
+    platform: macOS
+    deploymentTarget: '14.0'
+    sources:
+      - MacHelper
+      - Sources/GestureHelperCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.michaelcoelho.AppleRDP.GestureHelper
+        PRODUCT_NAME: ScreenStride Gesture Helper
+        MARKETING_VERSION: '1.0.0'
+        CURRENT_PROJECT_VERSION: '26'
+        ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_STYLE: Automatic
+        COMBINE_HIDPI_IMAGES: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: MacHelper/Info.plist
+      properties:
+        CFBundleDisplayName: ScreenStride Gesture Helper
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSUIElement: true
+        LSApplicationCategoryType: public.app-category.utilities
+        NSHumanReadableCopyright: Copyright © 2026 Michael Coelho
+schemes:
+  GestureHelper:
+    build:
+      targets:
+        GestureHelper: all
+    run:
+      config: Debug
+    archive:
+      config: Release
